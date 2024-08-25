@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    background-color: darkslategrey;
+    color: beige;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.container h1 {
+    font-size: 200%;
+}
+
+.links li {
+    display: inline;
+    margin: 10px;
+}
+
+.side-link a {
+    text-decoration: none;
+    color: beige;
+}
+
+.side-link a:hover {
+    text-decoration: underline;
+}
+
+.nav-menu-toggle {
+    display: none;
+}
+
+   
+/* side-navbar */
+.side-navbar {
+    background-color: darkslategrey;
+    color: white;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    left: -60%;
+  transition: 1s;
+}
+
+.side-navbar a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.side-navbar a:hover {
+    text-decoration: underline;
+}
+
+.side-link2 {
+    display: block;
+    margin: 40px;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+.header button{
+    padding: 12px;
+  margin-top: 10px;
+    background-color: darkslategrey;
+   
+}
+.header a{
+    text-decoration: none;
+    color:beige;
+    cursor: pointer;
+}
+
+/* service */
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    padding: 5px;
+}
+.service-container-2 div{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-container button{
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 70%;
+    left:30%;
+    border-radius: 10px;
+    border: none;
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.news input{
+    padding: 10px;
+    width: 80vw;
+    border: solid black;
+    margin-top: 10px;
+}
+.news button{
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1d232c;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: darkslategrey;
+    color: beige;
+}
+/* product */
+.product-section{
+    
+    margin-top: 20px;
+}
+.product-search{
+width: 80%;
+border: solid black 2px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.product-search input:focus{
+outline: none;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    margin-top: 20px;
+}
+.product-box{
+    text-align: center;
+}
+.product-box img{
+    border-radius: 10px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.contacts div{
+    margin-bottom: 20px;
+}
+.contact-box{
+    background-color: rgb(10, 65, 65);
+    color: white;
+    padding: 50px;
+    justify-content: center;
+    border-radius: 10px;
+}
+.contact-box input{
+    padding: 15px;
+    width: 60vw;
+    margin-top: 20px;
+    align-items: center;
+    outline: none;
+}
+.contact-box input:hover{
+    cursor: pointer;
+}
+.contact-box textarea{
+    padding: 25px;
+    width: 60vw;
+    margin-top: 20px;
+}
+.contact-box textarea:hover{
+    cursor: pointer;
+    outline: none;
+}
+.btn button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+
+/* mediaquery */
+@media screen and (max-width:600px) {
+    .nav-menu-toggle {
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
